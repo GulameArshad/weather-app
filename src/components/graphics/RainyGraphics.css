@@ -1,0 +1,59 @@
+.rainy-graphics {
+  width: 100%;
+  height: 100%;
+}
+
+.rain-animation {
+  animation: rainFall 1.5s linear infinite;
+}
+
+.raindrop {
+  animation: dropFall 1.8s ease-in infinite;
+}
+
+.raindrop-1 { animation-delay: 0s; }
+.raindrop-2 { animation-delay: 0.2s; }
+.raindrop-3 { animation-delay: 0.4s; }
+.raindrop-4 { animation-delay: 0.6s; }
+.raindrop-5 { animation-delay: 0.8s; }
+.raindrop-6 { animation-delay: 0.1s; }
+.raindrop-7 { animation-delay: 0.3s; }
+.raindrop-8 { animation-delay: 0.5s; }
+.raindrop-9 { animation-delay: 0.7s; }
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+@keyframes dropFall {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lightning-animation {
+  animation: lightning 4s ease-in-out infinite;
+}
+
+@keyframes lightning {
+  0%, 10%, 20%, 100% {
+    opacity: 0;
+  }
+  5%, 15% {
+    opacity: 1;
+  }
+}
